@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="圈子"
+        android:textSize="16sp"
+        android:textColor="@color/bg_tv_home_bottom_text"
+        />
+    <TextView
+        android:id="@+id/tv_find"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="发现"
+        android:textSize="16sp"
+        android:textColor="@color/bg_tv_home_bottom_text"
+        />
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:src="@drawable/bg_camera"
+        />
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="消息"
+        android:textSize="16sp"
+        android:textColor="@color/bg_tv_home_bottom_text"
+        />
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="个人"
+        android:textSize="16sp"
+        android:textColor="@color/bg_tv_home_bottom_text"
+        />
+
+</LinearLayout>

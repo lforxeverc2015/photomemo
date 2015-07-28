@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@color/home_header"
+    android:orientation="vertical" >
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="150dip"
+        android:padding="5dip"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="#00000000"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/rb_tab_hot"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:checked="true"
+            android:text="@string/home_rb_hot"
+            android:padding="2dip"
+            android:paddingRight="10dip"
+			android:paddingLeft="10dip"
+            android:background="@drawable/bg_rb_home_left"
+            android:textSize="14sp"
+            android:textColor="@color/bg_btn_home_top_text"
+            android:gravity="center"
+            
+            />
+        <RadioButton 
+            android:layout_marginLeft="-1dip"
+            android:id="@+id/rb_tab_me"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="@string/home_rb_me"
+            android:padding="2dip"
+            android:background="@drawable/bg_rb_home_right"
+            android:textSize="14sp"
+            android:textColor="@color/bg_btn_home_top_text"
+            android:gravity="center"
+            android:paddingRight="10dip"
+			android:paddingLeft="10dip"
+            />
+        </RadioGroup>
+        
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/iv_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        
+        />
+
+</RelativeLayout>

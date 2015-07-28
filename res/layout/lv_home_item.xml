@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="400dp"
+        android:minHeight="400dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_pic"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:textColor="#949494"
+        android:textSize="15sp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="15dip"
+        android:textColor="#d3d3d3"
+        android:textSize="14sp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_comment"
+        android:layout_marginTop="5dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:paddingBottom="10dip"
+        />
+    
+
+</RelativeLayout>
