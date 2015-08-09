@@ -1,17 +1,12 @@
 package com.irady.activity;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import com.irady.photomemo.R;
-
-import android.app.Activity;
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
-import android.hardware.Camera.Parameters;
 import android.hardware.Camera.PictureCallback;
 import android.hardware.Camera.Size;
 import android.os.Bundle;
@@ -24,7 +19,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class CameraActivity extends Activity implements OnClickListener{
+import com.irady.photomemo.R;
+
+public class CameraActivity extends BaseActivity implements OnClickListener{
 	private Camera mCamera;
 	private SurfaceView sv;
 	private SurfaceHolder sh;
@@ -93,7 +90,6 @@ public class CameraActivity extends Activity implements OnClickListener{
 					fos.flush();
 					fos.close();
 				} catch (Exception e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}

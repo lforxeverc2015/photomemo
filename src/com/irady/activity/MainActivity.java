@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.irady.fragment.CitiesFragment;
 import com.irady.fragment.HomeFrgment;
+import com.irady.fragment.ProfileFragment;
 import com.irady.manager.RequestManger;
 import com.irady.photomemo.R;
 
@@ -30,14 +31,15 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 	FragmentManager fm;
 	HomeFrgment hm;
 	CitiesFragment cm;
-
+	ProfileFragment pf;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		fm = getSupportFragmentManager();
-		hm = new HomeFrgment(this);
+		hm = new HomeFrgment();
 		cm = new CitiesFragment(this);
+		pf =new ProfileFragment();
 		findViews();
 		RequestManger.init(this);
 
@@ -101,7 +103,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 
 			break;
 		case R.id.tv_account:
-
+			FragmentTransaction ft2 = fm.beginTransaction();
+			ft2.replace(R.id.container, pf);
+			ft2.commit();
 			break;
 		default:
 			break;

@@ -11,9 +11,10 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int bg_btn_home_top_text=0x7f040003;
-        public static final int bg_tv_home_bottom_text=0x7f040004;
-        public static final int grey=0x7f040002;
+        public static final int bg_btn_home_top_text=0x7f040004;
+        public static final int bg_tv_home_bottom_text=0x7f040005;
+        public static final int blue=0x7f040002;
+        public static final int grey=0x7f040003;
         public static final int home_header=0x7f040000;
         public static final int white=0x7f040001;
     }
@@ -25,46 +26,69 @@ public final class R {
         public static final int bg_rb_home_right=0x7f020004;
         public static final int bg_rb_home_right_off=0x7f020005;
         public static final int bg_rb_home_right_on=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int lv_devider=0x7f020008;
+        public static final int btn_login=0x7f020007;
+        public static final int btn_regist=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int ll_ets=0x7f02000a;
+        public static final int lv_devider=0x7f02000b;
     }
     public static final class id {
+        public static final int btn_close=0x7f070003;
+        public static final int btn_login=0x7f07000d;
+        public static final int btn_regist=0x7f07000c;
+        public static final int btn_submit=0x7f070008;
         public static final int btn_take_photo=0x7f070001;
         public static final int container=0x7f070002;
-        public static final int iv=0x7f070003;
-        public static final int iv_camera=0x7f070009;
-        public static final int iv_pic=0x7f070010;
-        public static final int iv_refresh=0x7f07000f;
-        public static final int lv_home=0x7f070006;
-        public static final int rb_tab_hot=0x7f07000d;
-        public static final int rb_tab_me=0x7f07000e;
-        public static final int rg_tab=0x7f07000c;
-        public static final int rv_city=0x7f070005;
+        public static final int et_account=0x7f070005;
+        public static final int et_confirm_psw=0x7f070007;
+        public static final int et_psw=0x7f070006;
+        public static final int iv=0x7f07000e;
+        public static final int iv_camera=0x7f070014;
+        public static final int iv_pic=0x7f07001b;
+        public static final int iv_refresh=0x7f07001a;
+        public static final int ll_btns=0x7f07000b;
+        public static final int ll_ets=0x7f070004;
+        public static final int lv_home=0x7f070011;
+        public static final int rb_tab_hot=0x7f070018;
+        public static final int rb_tab_me=0x7f070019;
+        public static final int rg_tab=0x7f070017;
+        public static final int rv_city=0x7f070010;
         public static final int sv=0x7f070000;
-        public static final int tv_account=0x7f07000b;
-        public static final int tv_city=0x7f070004;
-        public static final int tv_comment=0x7f070012;
-        public static final int tv_find=0x7f070008;
-        public static final int tv_home=0x7f070007;
-        public static final int tv_msg=0x7f07000a;
-        public static final int tv_name=0x7f070011;
-        public static final int tv_time=0x7f070013;
+        public static final int tv_account=0x7f070016;
+        public static final int tv_app_name=0x7f070009;
+        public static final int tv_city=0x7f07000f;
+        public static final int tv_comment=0x7f07001d;
+        public static final int tv_find=0x7f070013;
+        public static final int tv_home=0x7f070012;
+        public static final int tv_msg=0x7f070015;
+        public static final int tv_name=0x7f07001c;
+        public static final int tv_time=0x7f07001e;
+        public static final int tv_tips=0x7f07000a;
     }
     public static final class layout {
         public static final int activity_camera=0x7f030000;
         public static final int activity_main=0x7f030001;
-        public static final int city_item=0x7f030002;
-        public static final int fm_citys=0x7f030003;
-        public static final int fm_home=0x7f030004;
-        public static final int home_footer=0x7f030005;
-        public static final int home_header=0x7f030006;
-        public static final int lv_home_item=0x7f030007;
+        public static final int activity_regist_login=0x7f030002;
+        public static final int activity_splash=0x7f030003;
+        public static final int city_item=0x7f030004;
+        public static final int fm_citys=0x7f030005;
+        public static final int fm_home=0x7f030006;
+        public static final int fm_profile=0x7f030007;
+        public static final int home_footer=0x7f030008;
+        public static final int home_header=0x7f030009;
+        public static final int lv_home_item=0x7f03000a;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
+        public static final int email_phone=0x7f050007;
         public static final int hello_world=0x7f050001;
         public static final int home_rb_hot=0x7f050003;
         public static final int home_rb_me=0x7f050002;
+        public static final int login=0x7f050004;
+        public static final int psw=0x7f050008;
+        public static final int re_psw=0x7f050009;
+        public static final int registe=0x7f050005;
+        public static final int splash_tips=0x7f050006;
     }
     public static final class style {
         /** 

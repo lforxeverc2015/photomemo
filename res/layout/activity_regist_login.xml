@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:layout_height="match_parent" >
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="X"
+        android:textStyle="bold"
+        android:background="#00000000"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        />
+    <LinearLayout
+        android:id="@+id/ll_ets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_ets"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/email_phone"
+            android:padding="10dip"
+            android:drawableBottom="@color/grey"
+            />
+        <EditText
+            android:id="@+id/et_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/psw"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:drawableBottom="@color/grey"
+            />
+         <EditText
+            android:id="@+id/et_confirm_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/re_psw"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:drawableBottom="@color/grey"
+            />
+         
+        
+    </LinearLayout>
+    
+    <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ll_ets"
+            android:layout_alignRight="@id/ll_ets"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_login"
+            android:layout_below="@id/ll_ets"
+            android:padding="5dip"
+            android:text="@string/registe"
+            android:layout_marginTop="20dip"
+            />
+
+</RelativeLayout>

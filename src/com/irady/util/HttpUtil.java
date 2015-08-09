@@ -21,6 +21,7 @@ public abstract class HttpUtil {
     private ErrorListener mErrorListener;
     private CalBack mCalBack;
     private String mUrl;
+    private String mTag;
     private int METHOD=Method.POST;
     
     
@@ -29,11 +30,13 @@ public abstract class HttpUtil {
     }
     
     public HttpUtil(String url){
+    	mTag=null;
         mUrl=url;
         init(null);
     }
     
-    public HttpUtil(String url,CalBack calback){
+    public HttpUtil(String url,CalBack calback,String taskTag){
+    	mTag=taskTag;
         mUrl=url;
         init(calback);
     }
@@ -52,7 +55,7 @@ public abstract class HttpUtil {
             @Override
             public void onResponse(String response) {
                 if(mCalBack != null){
-                mCalBack.onSuccess(response);
+                mCalBack.onSuccess(response,mTag);
                 }
             }
         };
@@ -61,7 +64,7 @@ public abstract class HttpUtil {
             @Override
             public void onErrorResponse(VolleyError error) {
                 if(mCalBack != null){
-                mCalBack.onError(error);
+                mCalBack.onError(error,mTag);
                 }
             }
         };
@@ -115,9 +118,9 @@ public abstract class HttpUtil {
         return HttpUtil.this;
     }
      
-    interface CalBack {
-         public void onSuccess(String responce);
-         public void onError(VolleyError error);
+    public interface CalBack {
+         public void onSuccess(String responce,String tag);
+         public void onError(VolleyError error,String tag);
      }
     
     public abstract void addParams(Map<String, String> params);

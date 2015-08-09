@@ -7,6 +7,7 @@ import com.irady.adapter.HomeAdapter;
 import com.irady.model.HomeData;
 import com.irady.photomemo.R;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -20,10 +21,12 @@ public class HomeFrgment extends Fragment {
 	private List<HomeData> datas;
 	private ListView lv;
 	public HomeFrgment() {
+		super();
 	}
-	
-	public HomeFrgment(Context c){
-		mContext=c;
+	@Override
+	public void onAttach(Activity activity) {
+		super.onAttach(activity);
+		mContext=activity;
 	}
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
