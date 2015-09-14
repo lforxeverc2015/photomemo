@@ -92,7 +92,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 			ft1.commit();
 			break;
 		case R.id.iv_camera:
-			Toast.makeText(this, "dianji", Toast.LENGTH_SHORT).show();
+//			Toast.makeText(this, "dianji", Toast.LENGTH_SHORT).show();
 			Intent i=new Intent(MainActivity.this,CameraActivity.class);
 			startActivity(i);
 			break;

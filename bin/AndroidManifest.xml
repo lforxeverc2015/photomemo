@@ -28,6 +28,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.irady.activity.CameraActivity"></activity>
+        <activity android:name="com.irady.activity.UploadActivity"></activity>
     </application>
 
 </manifest>
